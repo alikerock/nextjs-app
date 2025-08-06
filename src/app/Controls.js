@@ -20,7 +20,7 @@ export function Controls() {
           <li>
             <button className="btn btn-danger" onClick={()=>{
               const options={ method:'DELETE'};
-              fetch('http://localhost:9999/topics/'+id, options) //추가 
+              fetch(process.env.NEXT_PUBLIC_API_URL+'topics/'+id, options) //추가 
               .then()
               .then(()=>{
                 router.push('/');
