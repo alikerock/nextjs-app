@@ -36,7 +36,7 @@ const Update = ()=>{
         .then(r=>r.json())
         .then(result=>{
           router.push(`/read/${result.id}`);
-          //router.refresh();
+          router.refresh();
         });
       }}>
         <div className="mb-3">
